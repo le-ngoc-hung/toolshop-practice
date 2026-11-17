@@ -16,4 +16,4 @@ class ProductPage(BasePage):
         return self
 
     def price(self) -> float:
-        return float(self.unit_price.inner_text().replace("$", "").replace(",", "").strip())
+        return float(self.unit_price.inner_text())
